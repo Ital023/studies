@@ -13,6 +13,10 @@ import { DUMMY_USERS } from './dummy-users';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-angular-18-project-first-app';
   users = DUMMY_USERS;
+
+  onSelectUser(id: string) {
+    console.log("Selected user with Id: " + id);
+  }
+
 }
